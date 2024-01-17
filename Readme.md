@@ -1,4 +1,4 @@
-# TwiDIO API
+# JWT token
 
 #### API desenvolvida para o projeto TwiDIO
 
