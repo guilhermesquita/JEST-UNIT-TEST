@@ -1,6 +1,12 @@
-# JWT token
+# JEST UNIT TESTING
 
 #### API desenvolvida para o projeto TwiDIO
+
+### Notes
+    Padrão AAA
+    - Arrange: Montagem do cenário de testes
+    - Act: Ação que será testada
+    - Asssert: Validação dos resultados esperados
 
 ### Arquitetura
 

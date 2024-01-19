@@ -1,17 +1,17 @@
 /*
- * For a detailed explanation regarding each configuration property, visit:
+ * For a detailed explanation regarding each configuration property and type check, visit:
  * https://jestjs.io/docs/configuration
  */
 
-module.exports = {
+export default {
   // All imported modules in your tests should be mocked automatically
   // automock: false,
 
   // Stop running tests after `n` failures
-  bail: false,
+  // bail: 0,
 
   // The directory where Jest should store its cached dependency information
-  // cacheDirectory: "/private/var/folders/yj/l0wkr5tn4sv04b627zj_5jp40000gn/T/jest_dx",
+  // cacheDirectory: "C:\\Users\\GuilhermeMesquita\\AppData\\Local\\Temp\\jest",
 
   // Automatically clear mock calls, instances and results before every test
   clearMocks: true,
@@ -27,11 +27,11 @@ module.exports = {
 
   // An array of regexp pattern strings used to skip coverage collection
   // coveragePathIgnorePatterns: [
-  //   "/node_modules/"
+  //   "\\\\node_modules\\\\"
   // ],
 
   // Indicates which provider should be used to instrument code for coverage
-  coverageProvider: 'v8',
+  coverageProvider: "v8",
 
   // A list of reporter names that Jest uses when writing coverage reports
   // coverageReporters: [
@@ -93,7 +93,7 @@ module.exports = {
   // notifyMode: "failure-change",
 
   // A preset that is used as a base for Jest's configuration
-  preset: 'ts-jest'
+  preset: 'ts-jest',
 
   // Run tests from one or more projects
   // projects: undefined,
@@ -146,14 +146,14 @@ module.exports = {
   // testLocationInResults: false,
 
   // The glob patterns Jest uses to detect test files
-  // testMatch: [
-  //   "**/__tests__/**/*.[jt]s?(x)",
-  //   "**/?(*.)+(spec|test).[tj]s?(x)"
-  // ],
+  testMatch: [
+    "**/__tests__/**/*.[jt]s?(x)",
+    "**/?(*.)+(spec|test).[tj]s?(x)"
+  ],
 
   // An array of regexp pattern strings that are matched against all test paths, matched tests are skipped
   // testPathIgnorePatterns: [
-  //   "/node_modules/"
+  //   "\\\\node_modules\\\\"
   // ],
 
   // The regexp pattern or array of patterns that Jest uses to detect test files
@@ -176,8 +176,8 @@ module.exports = {
 
   // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
   // transformIgnorePatterns: [
-  //   "/node_modules/",
-  //   "\\.pnp\\.[^\\/]+$"
+  //   "\\\\node_modules\\\\",
+  //   "\\.pnp\\.[^\\\\]+$"
   // ],
 
   // An array of regexp pattern strings that are matched against all modules before the module loader will automatically return a mock for them
@@ -191,4 +191,4 @@ module.exports = {
 
   // Whether to use watchman for file crawling
   // watchman: true,
-}
+};
